@@ -3,7 +3,7 @@ services:
   name: server
   runtime: image
   image:
-    url: twentycrm/twenty:latest
+    url: twentycrm/twenty:v0.42.2
   dockerCommand: "sh -c ./scripts/render-run.sh"
   autoDeploy: false
   plan: standard
@@ -34,7 +34,7 @@ services:
   name: worker
   runtime: image
   image:
-    url: twentycrm/twenty:latest
+    url: twentycrm/twenty:v0.42.2
   dockerCommand: "sh -c ./scripts/render-worker.sh"
   autoDeploy: false
   plan: standard
@@ -70,7 +70,7 @@ services:
   plan: starter
   runtime: image
   image:
-    url: twentycrm/twenty-postgres:latest
+    url: twentycrm/twenty-postgres-spilo:v0.42.2
   autoDeploy: false
   disk:
     name: data
